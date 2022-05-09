@@ -1,0 +1,25 @@
+
+button, button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button{
+    width: 300px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color:#f1f1f1;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+button:hover{
+    background-color: #f1f1f1;
+    color:#1d1d1d;
+}

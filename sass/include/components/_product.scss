@@ -1,0 +1,50 @@
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+
+  img {
+    height: 400px;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .buy-btn {
+    background-color: #fb774b;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;
+    color: #fff;
+  }
+  &:hover {
+    .buy-btn {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+
+hr {
+  width: 30px;
+  height: 3px !important;
+  opacity: 1 !important;
+  background-color: #fb774b;
+}
+
+.shop-buy-btn {
+  background-color: #fb774b;
+  opacity: 1;
+  color: #fff;
+  text-decoration: none;
+}
+
+.star {
+  padding: 10px 0;
+}
+
+.star i {
+  font-size: 0.9rem;
+  color: goldenrod;
+}
