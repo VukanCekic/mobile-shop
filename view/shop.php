@@ -21,48 +21,7 @@
 </head>
 
 <body>
-    <header class="header font-roboto">
-        <div class="d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-roboto fs-14 mb-1">(662) 258-6771
-                187 Westwood Dr
-                Eupora, Mississippi(MS), 39744</p>
-            <div class="font-roboto fs-14 mb-1 ">
-                <a href="#" class="px-3 border-start text-dark text-decoration-none border-2">Login </a>
-            </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-dark color-secondary-bg fs-20 px-3">
-            <a class="navbar-brand text-white" href="#">Shopster</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav m-auto font-roboto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="index.html">Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Shop <span class="sr-only">(current)</span> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact Us</a>
-                    </li>
-                </ul>
-
-                <form action="#" class="font-size-14 font-rale">
-                    <a href="#" class="py-2 rounded-pill color-primary-bg text-decoration-none">
-                        <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
-                    </a>
-                </form>
-
-            </div>
-        </nav>
-    </header>
+<?php include("shared/header.php") ?>
 
     <!--Shop-->
     <section id="shop font-roboto">
@@ -249,46 +208,6 @@
         </div>
     </section>
 
-    <footer class="bg-light text-center text-lg-start font-roboto">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Footer text</h5>
-  
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-              aliquam voluptatem veniam, est atque cumque eum delectus sint!
-            </p>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Footer text</h5>
-  
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-              aliquam voluptatem veniam, est atque cumque eum delectus sint!
-            </p>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Grid container -->
-  
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2022 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">Shopster</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-
+  <?php include("shared/footer.php") ?>
 </body>
 </html>

@@ -8,13 +8,10 @@
   <title>Shopster</title>
 
   <!--Bootstrap-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Custom CSS file -->
   <link rel="stylesheet" href="../styles/style.css">
@@ -22,45 +19,7 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="d-flex justify-content-between px-4 py-1 bg-light">
-      <p class="font-roboto fs-14 mb-1">(662) 258-6771
-        187 Westwood Dr
-        Eupora, Mississippi(MS), 39744</p>
-      <div class="font-roboto fs-14 mb-1 ">
-        <a href="login.html" class="px-3 border-start text-dark text-decoration-none border-2">Login </a>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark color-secondary-bg fs-20 px-3">
-      <a class="navbar-brand text-white" href="#">Shopster</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav m-auto font-roboto">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./shop.html">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./contact.html">Contact Us</a>
-          </li>
-        </ul>
-
-        <form action="#" class="font-size-14 font-rale">
-          <a href="#" class="py-2 rounded-pill color-primary-bg text-decoration-none">
-            <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-            <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
-          </a>
-        </form>
-      </div>
-    </nav>
-
-  </header>
+  <?php include("shared/header.php") ?>
 
   <main class="font-roboto">
     <!--Home-->
@@ -125,7 +84,7 @@
           </div>
           <h5 class="p-name">Sport Shoes</h5>
           <h4 class="p-price">$200</h4>
-          <a href="<?php echo " single_product.php?product_id=". $row['product_id'];?>"><button class="buy-btn">Buy
+          <a href="<?php echo " single_product.php?product_id=" . $row['product_id']; ?>"><button class="buy-btn">Buy
               Now</button></a>
         </div>
 
@@ -140,7 +99,7 @@
           </div>
           <h5 class="p-name">asdf</h5>
           <h4 class="p-price">$asdf</h4>
-          <a href="<?php echo " single_product.php?product_id=". $row['product_id'];?>"><button class="buy-btn">Buy
+          <a href="<?php echo " single_product.php?product_id=" . $row['product_id']; ?>"><button class="buy-btn">Buy
               Now</button></a>
         </div>
 
@@ -155,7 +114,7 @@
           </div>
           <h5 class="p-name">asdf</h5>
           <h4 class="p-price">$asdf</h4>
-          <a href="<?php echo " single_product.php?product_id=". $row['product_id'];?>"><button class="buy-btn">Buy
+          <a href="<?php echo " single_product.php?product_id=" . $row['product_id']; ?>"><button class="buy-btn">Buy
               Now</button></a>
         </div>
       </div>
@@ -364,57 +323,12 @@
     </section>
   </main>
 
-  <footer class="bg-light text-center text-lg-start">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Footer text</h5>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-            aliquam voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Footer text</h5>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-            aliquam voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/">Shopster</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+  <?php include("shared/footer.php") ?>
 
   <!-- Bootstrap Js bundle -->
-  <script src="../https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="../https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="../https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script src="../https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="../https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="../https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- Custom Javascript -->
   <!-- <script src="../app.js"></script> -->
