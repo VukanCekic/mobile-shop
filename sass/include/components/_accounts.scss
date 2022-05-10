@@ -1,0 +1,65 @@
+#login-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid $color-primary;
+
+  input {
+    width: 50%;
+    margin: 5px auto;
+  }
+
+  #login-btn {
+    background-color: $color-primary;
+    color: #fff;
+  }
+
+  #register-url {
+    color: $color-primary;
+  }
+}
+
+#register-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid $color-primary;
+
+  input {
+    width: 50%;
+    margin: 5px auto;
+  }
+
+  #register-btn {
+    background-color: $color-primary;
+    color: #fff;
+  }
+
+  #login-url {
+    color: $color-primary;
+  }
+}
+
+#account-form {
+  width: 50%;
+  margin: 35px auto;
+  text-align: center;
+  padding: 20px;
+
+  input {
+    margin: 5px auto;
+  }
+
+  #change-pass-btn {
+    color: #fff;
+    background-color: $color-primary;
+  }
+
+  .account-info #orders-btn,
+  #logout-btn {
+    color: $color-primary;
+    text-decoration: none;
+  }
+}

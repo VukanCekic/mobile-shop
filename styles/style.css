@@ -89,7 +89,7 @@ button:hover {
   opacity: 0.7;
 }
 .product .buy-btn {
-  background-color: #fb774b;
+  background-color: #f77873;
   transform: translateY(50px);
   opacity: 0;
   transition: 0.3s all;
@@ -104,11 +104,11 @@ hr {
   width: 30px;
   height: 3px !important;
   opacity: 1 !important;
-  background-color: #fb774b;
+  background-color: #f77873;
 }
 
 .shop-buy-btn {
-  background-color: #fb774b;
+  background-color: #f77873;
   opacity: 1;
   color: #fff;
   text-decoration: none;
@@ -121,6 +121,39 @@ hr {
 .star i {
   font-size: 0.9rem;
   color: goldenrod;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.single-product input:focus {
+  outline: none;
+}
+
+.single-product .buy-btn {
+  background-color: #f77873;
+  opacity: 1;
+  transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover {
+  background-color: #121212;
+  color: #fff;
 }
 
 #banner {
@@ -139,6 +172,203 @@ hr {
 }
 #banner h1, #banner h4 {
   color: #fff;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart th {
+  text-align: left;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #f77873;
+}
+
+.cart .cart td {
+  padding: 10px 20px;
+}
+
+.cart td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.cart td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+.cart td a {
+  color: #fb774b;
+}
+
+.cart .remove-btn {
+  color: #f77873;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+}
+
+.cart .edit-btn {
+  color: #f77873;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #fff;
+  border: none;
+}
+
+.cart .product-info p {
+  margin: 3px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-total table {
+  width: 100%;
+  max-width: 500px;
+  border-top: 3px solid #f77873;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-btn {
+  background-color: #f77873;
+  color: #fff;
+}
+
+.footer-modified {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#login-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #f77873;
+}
+#login-form input {
+  width: 50%;
+  margin: 5px auto;
+}
+#login-form #login-btn {
+  background-color: #f77873;
+  color: #fff;
+}
+#login-form #register-url {
+  color: #f77873;
+}
+
+#register-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #f77873;
+}
+#register-form input {
+  width: 50%;
+  margin: 5px auto;
+}
+#register-form #register-btn {
+  background-color: #f77873;
+  color: #fff;
+}
+#register-form #login-url {
+  color: #f77873;
+}
+
+#account-form {
+  width: 50%;
+  margin: 35px auto;
+  text-align: center;
+  padding: 20px;
+}
+#account-form input {
+  margin: 5px auto;
+}
+#account-form #change-pass-btn {
+  color: #fff;
+  background-color: #f77873;
+}
+#account-form .account-info #orders-btn,
+#account-form #logout-btn {
+  color: #f77873;
+  text-decoration: none;
+}
+
+.orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.orders .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.orders th {
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #f77873;
+}
+.orders td {
+  padding: 10px 20px;
+}
+.orders .orders td,
+.orders .orders img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.orders .orders .order-details-btn {
+  color: #fff;
+  background-color: #f77873;
+}
+
+#checkout-form .checkout-small-element {
+  display: inline-block;
+  width: 48%;
+  margin: 10px auto;
+}
+#checkout-form .checkout-large-element {
+  width: 97%;
+}
+#checkout-form .checkout-btn-container {
+  margin: 10px;
+  text-align: right;
+  margin-right: 40px;
+}
+#checkout-form #checkout-btn {
+  color: #fff;
+  background-color: #f77873;
+}
+
+#contact span {
+  color: #f77873;
 }
 
 html, * {

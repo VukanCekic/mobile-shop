@@ -1,0 +1,30 @@
+.orders {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .product-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  th {
+    padding: 5px 20px;
+    color: #fff;
+    background-color: $color-primary;
+  }
+  td {
+    padding: 10px 20px;
+  }
+  .orders {
+    td,
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+    .order-details-btn {
+      color: #fff;
+      background-color: $color-primary;
+    }
+  }
+}

@@ -12,7 +12,7 @@
   }
 
   .buy-btn {
-    background-color: #fb774b;
+    background-color: $color-primary;
     transform: translateY(50px);
     opacity: 0;
     transition: 0.3s all;
@@ -30,11 +30,11 @@ hr {
   width: 30px;
   height: 3px !important;
   opacity: 1 !important;
-  background-color: #fb774b;
+  background-color: $color-primary;
 }
 
 .shop-buy-btn {
-  background-color: #fb774b;
+  background-color: $color-primary;
   opacity: 1;
   color: #fff;
   text-decoration: none;
@@ -47,4 +47,42 @@ hr {
 .star i {
   font-size: 0.9rem;
   color: goldenrod;
+}
+
+
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+
+.single-product input{
+width: 50px;
+height: 40px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+
+.single-product input:focus{
+  outline: none;
+}
+
+.single-product .buy-btn{
+  background-color: $color-primary;
+  opacity: 1;
+  transition: 0.4s all;
+
+}
+
+.single-product .buy-btn:hover{
+  background-color: $color-secondary;
+  color: #fff
+
 }

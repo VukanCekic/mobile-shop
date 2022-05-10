@@ -11,32 +11,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Custom CSS file -->
-  <link rel="stylesheet" href="styles/style.css">
-
+  <link rel="stylesheet" href="../styles/style.css">
 
 </head>
 
 <body>
-
   <header class="header">
     <div class="d-flex justify-content-between px-4 py-1 bg-light">
       <p class="font-roboto fs-14 mb-1">(662) 258-6771
         187 Westwood Dr
         Eupora, Mississippi(MS), 39744</p>
       <div class="font-roboto fs-14 mb-1 ">
-        <a href="#" class="px-3 border-start text-dark text-decoration-none border-2">Login </a>
+        <a href="login.html" class="px-3 border-start text-dark text-decoration-none border-2">Login </a>
       </div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark color-secondary-bg fs-20 px-3">
-      <a class="navbar-brand text-white" href="#">Mobile Shop</a>
+      <a class="navbar-brand text-white" href="#">Shopster</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,13 +44,10 @@
             <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Shop </a>
+            <a class="nav-link text-white" href="./shop.html">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact Us</a>
+            <a class="nav-link text-white" href="./contact.html">Contact Us</a>
           </li>
         </ul>
 
@@ -63,14 +57,12 @@
             <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
           </a>
         </form>
-
       </div>
     </nav>
 
   </header>
 
   <main class="font-roboto">
-
     <!--Home-->
     <section id="home" class="d-flex align-items-center">
       <div class="container">
@@ -82,7 +74,7 @@
             <button>Shop Now</button>
           </div>
           <div class="col d-none d-md-block">
-            <img src="assets/images/hero-image.svg" class="img-fluid" alt="">
+            <img src="../assets/images/hero-image.svg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -91,13 +83,12 @@
     <!--Brand-->
     <section id="brand" class="container-fluid">
       <div class="row m-0">
-        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="assets/images/brand1.jpeg" />
-        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="assets/images/brand2.jpeg" />
-        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="assets/images/brand3.jpeg" />
-        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="assets/images/brand4.jpeg" />
-        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="assets/images/brand1.jpeg" />
-        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="assets/images/brand2.jpeg" />
-      
+        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand1.jpeg" />
+        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand2.jpeg" />
+        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand3.jpeg" />
+        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand4.jpeg" />
+        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand1.jpeg" />
+        <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand2.jpeg" />
       </div>
     </section>
 
@@ -109,9 +100,8 @@
         <p>Here you can check out our featured products</p>
       </div>
       <div class="row mx-auto container-fluid">
-
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/featured1.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/featured/featured1.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -121,12 +111,11 @@
           </div>
           <h5 class="p-name">asdf</h5>
           <h4 class="p-price">$asdf</h4>
-          <a href="<?php echo " single_product.php?product_id=". $row['product_id'];?>"><button class="buy-btn">Buy
-              Now</button></a>
+          <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
 
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/featured2.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/featured/featured2.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -141,7 +130,7 @@
         </div>
 
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/featured3.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/featured/featured3.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -156,7 +145,7 @@
         </div>
 
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/featured4.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/featured/featured4.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -169,8 +158,6 @@
           <a href="<?php echo " single_product.php?product_id=". $row['product_id'];?>"><button class="buy-btn">Buy
               Now</button></a>
         </div>
-
-
       </div>
     </section>
 
@@ -183,7 +170,6 @@
       </div>
     </section>
 
-
     <!--Clothes-->
     <section id="featured" class="my-5">
       <div class="container text-center mt-5 py-5">
@@ -194,7 +180,7 @@
       <div class="row mx-auto container-fluid">
 
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/clothes1.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/clothes/clothes1.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -207,7 +193,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/clothes2.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/clothes/clothes2.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -220,7 +206,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/clothes3.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/clothes/clothes3.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -233,7 +219,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/clothes4.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/clothes/clothes4.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -245,11 +231,8 @@
           <h4 class="p-price">Product price</h4>
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
-
-
       </div>
     </section>
-
 
     <!--Watches-->
     <section id="watches" class="my-5">
@@ -260,10 +243,8 @@
       </div>
       <div class="row mx-auto container-fluid">
 
-
-
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/watch1.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/watches/watch1.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -276,7 +257,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/watch2.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/watches/watch2.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -289,7 +270,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/watch3.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/watches/watch3.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -302,7 +283,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/watch4.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/watches/watch4.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -314,9 +295,6 @@
           <h4 class="p-price">Produt price</h4>
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
-
-
-
       </div>
     </section>
 
@@ -329,9 +307,8 @@
       </div>
       <div class="row mx-auto container-fluid">
 
-
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/shoes1.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/shoes/shoes1.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -344,7 +321,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/shoes2.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/shoes/shoes2.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -357,7 +334,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/shoes3.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/shoes/shoes3.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -370,7 +347,7 @@
           <a href="#"><button class="buy-btn">Buy Now</button></a>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/images/shoes4.jpeg" />
+          <img class="img-fluid mb-3" src="../assets/images/shoes/shoes4.jpeg" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -385,10 +362,7 @@
 
       </div>
     </section>
-
-
   </main>
-
 
   <footer class="bg-light text-center text-lg-start">
     <!-- Grid container -->
@@ -398,7 +372,7 @@
         <!--Grid column-->
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase">Footer text</h5>
-  
+
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
             molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
@@ -406,11 +380,11 @@
           </p>
         </div>
         <!--Grid column-->
-  
+
         <!--Grid column-->
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase">Footer text</h5>
-  
+
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
             molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
@@ -422,7 +396,7 @@
       <!--Grid row-->
     </div>
     <!-- Grid container -->
-  
+
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright:
@@ -432,18 +406,18 @@
   </footer>
 
   <!-- Bootstrap Js bundle -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <script src="../https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  <script src="../https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  <script src="../https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
   <!-- Custom Javascript -->
-  <script src="app.js"></script>
+  <!-- <script src="../app.js"></script> -->
 
 </body>
 
