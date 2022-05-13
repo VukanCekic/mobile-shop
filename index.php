@@ -1,4 +1,6 @@
 <?php
-header("Location: http://localhost:8000/view/home.php");
-die();
+include("./model/products_db.php");
+
+$featured_products = get_featured_products();
+include("view/home.php");
 ?>

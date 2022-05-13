@@ -20,7 +20,6 @@
 
 <body>
   <?php include("shared/header.php") ?>
-
   <main class="font-roboto">
     <!--Home-->
     <section id="home" class="d-flex align-items-center">
@@ -58,66 +57,25 @@
         <hr class="mx-auto">
         <p>Here you can check out our featured products</p>
       </div>
+
       <div class="row mx-auto container-fluid">
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="../assets/images/featured/featured1.jpeg" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">asdf</h5>
-          <h4 class="p-price">$asdf</h4>
-          <a href="#"><button class="buy-btn">Buy Now</button></a>
-        </div>
 
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="../assets/images/featured/featured2.jpeg" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Shoes</h5>
-          <h4 class="p-price">$200</h4>
-          <a href="<?php echo " single_product.php?product_id=" . $row['product_id']; ?>"><button class="buy-btn">Buy
-              Now</button></a>
-        </div>
+        <?php foreach ($featured_products as $featured_product) { ?>
 
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="../assets/images/featured/featured3.jpeg" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+          <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+            <img class="img-fluid mb-3" 
+            src="
+            ../assets/images/<?php echo $featured_product["product_category"]?>/<?php echo $featured_product["product_image"]?>" />
+      
+            <h5 class="p-name"><?php echo $featured_product["product_name"]?></h5>
+            <h4 class="p-price"><?php echo $featured_product["product_price"]?></h4>
+            <a href="#"><button class="buy-btn">Buy Now</button></a>
           </div>
-          <h5 class="p-name">asdf</h5>
-          <h4 class="p-price">$asdf</h4>
-          <a href="<?php echo " single_product.php?product_id=" . $row['product_id']; ?>"><button class="buy-btn">Buy
-              Now</button></a>
-        </div>
 
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="../assets/images/featured/featured4.jpeg" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">asdf</h5>
-          <h4 class="p-price">$asdf</h4>
-          <a href="<?php echo " single_product.php?product_id=" . $row['product_id']; ?>"><button class="buy-btn">Buy
-              Now</button></a>
-        </div>
+        <?php } ?>
+
       </div>
+
     </section>
 
     <!--Banner-->
@@ -125,7 +83,7 @@
       <div class="container">
         <h4>MID SEASON'S SALE</h4>
         <h1>Autumn Collection <br> UP to 30% OFF</h1>
-        <button class="text-uppercase">shop now</button>
+        <button class="text-uppercase" onclick="location.href='views/shop.php';">shop now</button>
       </div>
     </section>
 

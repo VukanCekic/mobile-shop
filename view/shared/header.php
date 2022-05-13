@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-auto font-roboto">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="./home.php">Home</a>
+            <a class="nav-link text-white" href="./view/home.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="./shop.php">Shop</a>

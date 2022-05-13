@@ -1,4 +1,6 @@
 <?php
+include("./utils/console_logger.php");
+
 function get_products_by_category_and_limit($category, $limit)
 {
         include('connection.php');
@@ -23,7 +25,6 @@ function get_featured_products()
        
         $statement = $conn->prepare($query);
         $statement->execute();
-
         $featured_products = $statement->fetchAll();
         $statement->closeCursor();
         return $featured_products;
