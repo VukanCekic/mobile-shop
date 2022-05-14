@@ -1,6 +1,5 @@
 <?php
- // https://phprouter.com/ package used
- 
+
 session_start();
 
 function get($route, $path_to_include){
@@ -32,7 +31,7 @@ function route($route, $path_to_include){
   $request_url_parts = explode('/', $request_url);
   array_shift($route_parts);
   array_shift($request_url_parts);
-  if( $route_parts[0] == '' && count($request_url_parts) == 0 ){
+  if($route_parts && $route_parts[0] == '' && count($request_url_parts) == 0 ){
     include_once("$ROOT/$path_to_include");
     exit();
   }

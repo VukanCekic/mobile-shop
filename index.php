@@ -11,11 +11,18 @@ require_once("{$_SERVER['DOCUMENT_ROOT']}/router/router.php");
 get('/', 'controllers/get_home.php');
 get('/home', 'controllers/get_home.php');
 
+//SHOP ROUTES
 get('/shop', 'controllers/get_shop.php');
 
+//CONTACT ROUTES
 get('/contact', 'controllers/get_contact.php');
 
+//SINGLE_PRODUCTS
 get('/single_product/product_id/$id', 'controllers/get_single_product.php');
+
+//CART ROUTES
+post('/cart', 'controllers/cart.php');
+get('/cart', 'controllers/cart.php');
 
 
 
@@ -23,4 +30,3 @@ get('/single_product/product_id/$id', 'controllers/get_single_product.php');
 // The 404.php which is inside the views folder will be called
 // The 404.php has access to $_GET and $_POST
 any('/404','view/404.php');
-?>

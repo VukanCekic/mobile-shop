@@ -38,6 +38,9 @@
 }
 
 .cart .remove-btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 1rem;
   color: $color-primary;
   text-decoration: none;
   font-size: 14px;
@@ -47,11 +50,14 @@
 }
 
 .cart .edit-btn {
+  text-transform: uppercase;
+  font-weight: bold;
   color: $color-primary;
   text-decoration: none;
   font-size: 15px;
   background-color: #fff;
   border: none;
+  width: 100%;
 }
 
 .cart .product-info p {

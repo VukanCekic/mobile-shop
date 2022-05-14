@@ -4,7 +4,6 @@
   font-family: "Roboto", cursive;
 }
 
-
 .fs-12 {
   font-size: 12px;
 }
@@ -211,6 +210,9 @@ hr {
 }
 
 .cart .remove-btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 1rem;
   color: #f77873;
   text-decoration: none;
   font-size: 14px;
@@ -220,11 +222,14 @@ hr {
 }
 
 .cart .edit-btn {
+  text-transform: uppercase;
+  font-weight: bold;
   color: #f77873;
   text-decoration: none;
   font-size: 15px;
   background-color: #fff;
   border: none;
+  width: 100%;
 }
 
 .cart .product-info p {

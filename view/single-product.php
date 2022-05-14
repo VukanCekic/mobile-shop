@@ -13,13 +13,15 @@
                 <h3 class="py-4"><?php echo $product['product_name']; ?></h3>
                 <h2>$<?php echo $product['product_price']; ?></h2>
 
-                <form method="POST" action="cart.php">
-                    <!-- <input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>" />
+                <form method="POST" action="<?php $_SERVER['DOCUMENT_ROOT']?>/cart">
+                    <input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>" />
                     <input type="hidden" name="product_image" value="<?php echo $product['product_image']; ?>" />
                     <input type="hidden" name="product_name" value="<?php echo $product['product_name']; ?>" />
-                    <input type="hidden" name="product_price" value="<?php echo $product['product_price']; ?>" /> -->
+                    <input type="hidden" name="product_price" value="<?php echo $product['product_price']; ?>" />
+                    <input type="hidden" name="product_category" value="<?php echo $product['product_category']; ?>" />
+
                     <input type="number" name="product_quantity" value="1" />
-                    <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>
+                    <button class="buy-btn" type="submit" name="add_cart_item">Add To Cart</button>
                 </form>
 
                 <h4 class="mt-5 mb-5">Product details</h4>
