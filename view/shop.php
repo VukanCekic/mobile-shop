@@ -1,4 +1,4 @@
-<?php include("shared/header.php") ?>
+<?php require_once("shared/header.php") ?>
 
     <!--Shop-->
     <section id="shop font-roboto">
@@ -185,4 +185,4 @@
         </div>
     </section>
 
-  <?php include("shared/footer.php") ?>
+  <?php require_once("shared/footer.php") ?>

@@ -71,4 +71,9 @@ INSERT INTO products (product_name, product_category, product_description, produ
 
 INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color,featured) VALUES ("Puma Runner", "bags", "A comfortable Puma bag, cold like the winter and for various occasions", "bag1.jpeg", "30", "artic", TRUE);
 INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color,featured) VALUES ("Puma Night", "bags", "A comfortable Puma, dark like the night and for various occasions", "bag2.jpeg", "42.50", "black", TRUE);
-INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color,featured) VALUES ("Nike Daylight", "bags", "A comfortable Nike bag , birght like the sky and for various occasions", "bag3.jpeg", "59.99", "sky", TRUE);
+INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color,featured) VALUES ("Nike Daylight", "bags", "A comfortable Nike bag , birght like the sky and for various occasions", "bag3.jpeg", "59.99", "sky", TRUE)
+
+INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color) VALUES ("Pale Class", "coats", "Outwear for the perfect ocasion, no matter the weather", "clothes1.jpeg", "100", "brown");
+INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color) VALUES ("High Top", "coats", "Outwear for the perfect ocasion, no matter the weather", "clothes2.jpeg", "80", "black");
+INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color) VALUES ("Royal", "coats", "Outwear for the perfect ocasion, no matter the weather", "clothes3.jpeg", "120", "royal blue");
+INSERT INTO products (product_name, product_category, product_description, product_image, product_price, product_color) VALUES ("Royal House", "coats", "Outwear for the perfect ocasion, no matter the weather", "clothes4.jpeg", "125", "ice white");

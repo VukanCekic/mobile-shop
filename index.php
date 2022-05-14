@@ -1,5 +1,5 @@
 <?php
-require_once("{$_SERVER['DOCUMENT_ROOT']}/router.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/router/router.php");
 
 // ##################################################
 // ##################################################
@@ -8,10 +8,12 @@ require_once("{$_SERVER['DOCUMENT_ROOT']}/router.php");
 // Static GET
 // In the URL -> http://localhost
 // The output -> Index
-get('/', 'controllers/home.php');
-get('/home', 'controllers/home.php');
+get('/', 'controllers/get_home.php');
+get('/home', 'controllers/get_home.php');
 
-get('/shop', 'controllers/shop.php');
+get('/shop', 'controllers/get_shop.php');
+
+get('/single_product/product_id/$id', 'controllers/get_single_product.php');
 
 
 
