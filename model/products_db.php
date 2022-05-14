@@ -1,11 +1,11 @@
 <?php
 include("./utils/console_logger.php");
 
-function get_products_by_category_and_limit($category, $limit)
+function get_products_by_category_and_limit($category, $limit = 4)
 {
         include('connection.php');
 
-        $query = ("SELECT * FROM products WHERE product_category=:product_category LIMIT :number_of_items");
+        $query = ("SELECT * FROM products WHERE product_category=:product_category LIMIT:number_of_items");
        
         $statement = $conn->prepare($query);
         $statement->bindValue(":product_category", $category);
