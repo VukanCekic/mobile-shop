@@ -1,34 +1,79 @@
 <?php require_once("shared/header.php") ?>
 
 <main class="font-roboto">
-  <!--Home-->
-  <section id="home" class="d-flex align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col d-flex flex-column justify-content-center  align-items-center align-items-md-start">
-          <h5>NEW ARRIVALS</h5>
-          <h1 class="text-center text-md-left"><span>Best Prices</span> This Season</h1>
-          <p class="text-center text-md-left">Eshop offers the best products for the most affordable prices</p>
-          <button>Shop Now</button>
-        </div>
-        <div class="col d-none d-md-block">
-          <img src="../assets/images/hero-image.svg" class="img-fluid" alt="">
+
+
+<div class="hero">
+      <div class="glide" id="glide_1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="center">
+                <div class="left">
+                  <span class="">New Inspiration <?php echo date("Y"); ?></span>
+                  <h1 class="">NEW COLLECTION!</h1>
+                  <p>Trending from men's and women's style collection</p>
+                  <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/shop" class="hero-btn">SHOP NOW</a>
+                </div>
+                <div class="right">
+                    <img class="img1" src="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/images/hero-1.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="center">
+                <div class="left">
+                  <span>New Inspiration <?php echo date("Y");?></span>
+                  <h1>THE PERFECT MATCH!</h1>
+                  <p>Trending from men's and women's  style collection</p>
+                  <a href="#" class="hero-btn">SHOP NOW</a>
+
+                </div>
+                <div class="right">
+                  <img class="img2" src="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/images/hero-2.png" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+</div>
 
-  <!--Brand-->
-  <section id="brand" class="container-fluid">
-    <div class="row m-0">
-      <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand1.jpeg" />
-      <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand2.jpeg" />
-      <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand3.jpeg" />
-      <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand4.jpeg" />
-      <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand1.jpeg" />
-      <img class="img-fluid col-lg-2 col-md-6 d-none d-md-block" src="../assets/images/brands/brand2.jpeg" />
-    </div>
-  </section>
+
+    <!-- New Arrivals -->
+    <section class="section new-arrival">
+      <div class="title">
+        <h1>NEW ARRIVALS</h1>
+        <p>All the latest picked from designer of our store</p>
+      </div>
+
+      <div class="product-center">
+
+      <?php foreach ($featured_products as $featured_product) { ?>
+      
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/images/<?php echo $featured_product["product_category"] ?>/<?php echo $featured_product["product_image"] ?>" alt="" />
+            </a>
+          </div>
+
+          <div class="product-info">
+            <span>CATEGORY: <?php echo strtoupper($featured_product["product_category"])  ?></span>
+            <a href=""><?php echo $featured_product["product_name"] ?></a>
+            <h4><?php echo $featured_product["product_price"]?></h4>
+          </div>
+          <ul class="icons">
+            <li><i onclick="location.href='<?php echo "single_product/product_id/" . $featured_product['product_id']; ?>'" class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <?php } ?>
+
+      </div>
+    </section>
 
   <!--Featured-->
   <section id="featured" class="my-5 pb-5">
