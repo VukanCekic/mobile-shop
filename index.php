@@ -13,6 +13,8 @@ get('/home', 'controllers/get_home.php');
 
 get('/shop', 'controllers/get_shop.php');
 
+get('/contact', 'controllers/get_contact.php');
+
 get('/single_product/product_id/$id', 'controllers/get_single_product.php');
 
 

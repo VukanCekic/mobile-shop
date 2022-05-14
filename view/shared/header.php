@@ -41,10 +41,10 @@
             <a class="nav-link text-white" href="<?php $_SERVER['DOCUMENT_ROOT']?>/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./shop">Shop</a>
+            <a class="nav-link text-white" href="<?php $_SERVER['DOCUMENT_ROOT']?>/shop">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./contact.php">Contact Us</a>
+            <a class="nav-link text-white" href="<?php $_SERVER['DOCUMENT_ROOT']?>/contact">Contact Us</a>
           </li>
         </ul>
 
