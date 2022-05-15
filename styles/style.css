@@ -422,24 +422,98 @@ button:hover {
     height: 20rem;
   }
 }
-#banner {
-  background-image: url("../assets/images/fall-banner.jpg");
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: 80px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+/* Banner */
+.banner {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 14rem 20%;
 }
-#banner h1, #banner h4 {
-  color: #fff;
+.banner .right img {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 75rem;
+}
+.banner .trend {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.banner p {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.banner h1 {
+  font-size: 5.4rem;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
+.banner .btn {
+  display: inline-block;
+  margin-top: 2rem;
 }
 
+@media only screen and (max-width: 1500px) {
+  .banner {
+    padding: 14rem;
+  }
+  .banner .right img {
+    right: 3rem;
+    width: 70rem;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .banner {
+    padding: 8rem 2rem;
+  }
+  .banner .trend {
+    font-size: 1.5rem;
+  }
+  .banner p {
+    font-size: 1.5rem;
+  }
+  .banner h1 {
+    font-size: 4rem;
+  }
+  .banner .right img {
+    right: -6%;
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80vh;
+  }
+  .banner .right img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .banner {
+    padding: 8rem 5rem;
+  }
+  .banner .trend {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .banner p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .banner .btn {
+    padding: 0.8rem 1.7rem;
+    font-size: 1.4rem;
+  }
+}
 .cart table {
   width: 100%;
   border-collapse: collapse;
@@ -680,7 +754,7 @@ footer .row {
 
 .header {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .logo {

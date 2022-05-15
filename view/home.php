@@ -75,41 +75,20 @@
       </div>
     </section>
 
-  <!--Featured-->
-  <section id="featured" class="my-5 pb-5">
-    <div class="container text-center mt-5 py-5">
-      <h3>Our Featured</h3>
-      <hr class="mx-auto">
-      <p>Here you can check out our featured products</p>
-    </div>
 
-    <div class="row mx-auto container-fluid">
+<!--Banner-->
+<section class="section banner container  ">
+<div class="left">
+  <span class="trend">Trend Design</span>
+  <h1>New Collection 2021</h1>
+  <p>New Arrival <span class="color">Sale 50% OFF</span> Limited Time Offer</p>
+  <a href="#" class="btn btn-1">Discover Now</a>
+</div>
+<div class="right">
+  <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/images/banner.png" alt="">
+</div>
+</section>
 
-      <?php foreach ($featured_products as $featured_product) { ?>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="
-          <?php $_SERVER['DOCUMENT_ROOT']?>/assets/images/<?php echo $featured_product["product_category"] ?>/<?php echo $featured_product["product_image"] ?>" />
-
-          <h5 class="p-name"><?php echo $featured_product["product_name"] ?></h5>
-          <h4 class="p-price"><?php echo $featured_product["product_price"] ?></h4>
-          <a href="<?php echo "single_product/product_id/" . $featured_product['product_id']; ?>"><button class="buy-btn">Buy Now</button></a>
-        </div>
-
-      <?php } ?>
-
-    </div>
-
-  </section>
-
-  <!--Banner-->
-  <section id="banner" class="my-5 py-5">
-    <div class="container">
-      <h4>MID SEASON'S SALE</h4>
-      <h1>Autumn Collection <br> UP to 30% OFF</h1>
-      <button class="text-uppercase" onclick="location.href='/shop';">shop now</button>
-    </div>
-  </section>
 
   <!--Clothes-->
   <section id="featured" class="my-5">
