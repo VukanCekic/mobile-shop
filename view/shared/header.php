@@ -20,6 +20,8 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
 
+
+
     <!-- Glide js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
@@ -29,35 +31,49 @@
 <body>
 
 
-       <!-- Header -->
-    <header class="header container" id="header">
-   
+     <!-- Header -->
+     <header class="header" id="header">
+      <!-- Top Nav -->
+      <div class="top-nav">
+        <div class=" d-flex-custom">
+          <p>Order Online Or Call Us: (001) 2222-55555</p>
+          <ul class="d-flex-custom">
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="navigation">
-        <div class="nav-center container d-flex">
+        <div class="nav-center  d-flex-custom">
         <a href="/" class="logo"><h1>Shopster</h1></a>
 
-          <ul class="nav-list d-flex">
+          <ul class="nav-list d-flex-custom">
             <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
+              <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/shop" class="nav-link">Shop</a>
             </li>
-            <li class="nav-item">
-              <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/contact" class="nav-link">Contact</a>
-            </li>
-            <li class="icons d-flex">
+        
+            <li class="icons d-flex-custom">
             <a href="login.html" class="icon">
               <i class="bx bx-user"></i>
             </a>
             <a href="cart.html" class="icon">
               <i class="bx bx-cart"></i>
-              <span class="d-flex">0</span>
+              <span class="d-flex-custom">0</span>
             </a>
           </li>
           </ul>
 
-          
+          <div class="icons d-flex-custom">
+            <a href="login.html" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+            <a href="cart.html" class="icon">
+              <i class="bx bx-cart"></i>
+              <span class="d-flex-custom">0</span>
+            </a>
+          </div>
 
           <div class="hamburger">
             <i class="bx bx-menu-alt-left"></i>

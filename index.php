@@ -20,6 +20,9 @@ get('/contact', 'controllers/get_contact.php');
 //SINGLE_PRODUCTS
 get('/single_product/product_id/$id', 'controllers/get_single_product.php');
 
+//CHECKOUT
+get('/checkout', 'controllers/checkout.php');
+
 //CART ROUTES
 post('/cart', 'controllers/cart.php');
 get('/cart', 'controllers/cart.php');

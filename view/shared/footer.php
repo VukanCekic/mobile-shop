@@ -1,16 +1,16 @@
  <!-- Footer -->
- <footer class="footer">
+ <footer class="footer custom-container">
       <div class="row">
-        <div class="col d-flex">
+        <div class="footer-col d-flex-custom">
           <h4>INFORMATION</h4>
           <a href="">Contact Us</a>
         </div>
-        <div class="col d-flex">
+        <div class="footer-col d-flex-custom">
           <h4>USEFUL LINKS</h4>
           <a href="">Account</a>
           <a href="">Shop</a>
         </div>
-        <div class="col d-flex">
+        <div class="footer-col d-flex-custom">
           <span><i class='bx bxl-facebook-square'></i></span>
           <span><i class='bx bxl-instagram-alt' ></i></span>
           <span><i class='bx bxl-github' ></i></span>

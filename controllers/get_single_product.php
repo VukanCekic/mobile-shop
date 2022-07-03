@@ -5,6 +5,7 @@ if($id && is_numeric($id)){
     $product = get_single_product($id);
     
     if($product){
+        $related_products = get_products_by_category_and_limit($product["product_category"]);
         include("view/single-product.php");
         return; 
     }
